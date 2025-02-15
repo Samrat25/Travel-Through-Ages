@@ -439,7 +439,6 @@
     z-index: 777;
     content: '';
     position: absolute;
-    background: rgba(3, 96, 251, 0.3);
     top: 0;
     left: 0;
     height: 100%;
