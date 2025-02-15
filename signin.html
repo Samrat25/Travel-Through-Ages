@@ -282,6 +282,41 @@ button.ghost {
         </div>
     </div>
     <script src="assets/js/main.js"></script>
+
+	<script>
+		// Function to convert form data to JSON
+function formToJSON(formElement) {
+    const formData = new FormData(formElement);
+    const jsonObject = {};
+    
+    formData.forEach((value, key) => {
+        jsonObject[key] = value;
+    });
+
+    return JSON.stringify(jsonObject, null, 2); // Pretty print with 2-space indentation
+}
+
+// Example usage:
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent actual form submission
+    
+    const jsonData = formToJSON(event.target);
+    console.log(jsonData);
+    
+    // Optional: send JSON to the server using fetch
+    fetch('/signin', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: jsonData,
+    })
+    .then(response => response.json())
+    .then(data => console.log('Server response:', data))
+    .catch(error => console.error('Error:', error));
+});
+
+	</script>
 </body>
 
 </html>
