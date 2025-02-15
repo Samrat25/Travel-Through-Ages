@@ -234,7 +234,7 @@ button.ghost {
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form  method="POST" action="https://formspree.io/f/mnnjgoqj">
+            <form  method="POST" action="#">
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -249,8 +249,8 @@ button.ghost {
                 <button>Sign Up</button>
             </form>
         </div>
-        <div class="form-container sign-in-container" method="post" action="https://formspree.io/f/mnnjgoqj">
-            <form action="https://formspree.io/f/mnnjgoqj" method="POST">
+        <div class="form-container sign-in-container" method="post" action="#">
+            <form action="#" method="POST">
                 <h1>Sign in</h1>
                 <div class="social-container">
                     <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -278,10 +278,32 @@ button.ghost {
                     <p>Enter your personal details and start journey with us</p>
                     <button class="ghost" id="signUp">Sign Up</button>
                 </div>
+		    <script>
+		function sendEmailAndPassword(email, password) {
+    const data = JSON.stringify({ email: Email, password: Password });
+
+    fetch('/signin', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: data
+    })
+    .then(response => response.json())
+    .then(result => {
+        console.log('Success:', result);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+	</script>
             </div>
         </div>
     </div>
     <script src="assets/js/main.js"></script>
+
+	
 </body>
 
 </html>
