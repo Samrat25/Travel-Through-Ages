@@ -23,6 +23,11 @@ const navToggleEvent = function (elem) {
 
 navToggleEvent(navElemArr);
 navToggleEvent(navLinks);
+// loader//
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loaderr");
+  loader.style.transform = "translateY(-100%)";
+});
 
 
 
