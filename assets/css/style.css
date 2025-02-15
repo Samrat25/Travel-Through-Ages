@@ -250,6 +250,7 @@
   
   .logo{ 
     align-self: center;
+    border-color: transparent;
   }
   
   .header-btn-group {
@@ -419,6 +420,7 @@
     /* background-size:cover; */
     /* background-position:center; */
     background-color: hsla(0, 0%, 0%, 0.6);
+    height: 100%;
     /* background-blend-mode: overlay; */
     display: grid;
     place-items: center;
@@ -473,6 +475,8 @@
   .tour-search {
     background: var(--bright-navy-blue);
     padding-block: var(--section-padding);
+    z-index: -2;
+    position: relative;
   }
   
   .tour-search-form .input-label {
@@ -756,7 +760,9 @@
   
   .footer-brand img { width: 180px; }
   
-  .footer-brand .logo { margin-bottom: 20px; }
+  .footer-brand .logo { 
+    margin-bottom: 20px; 
+  }
   
   .footer-text {
     font-size: var(--fs-5);
