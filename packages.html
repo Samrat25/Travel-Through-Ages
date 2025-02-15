@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Package</title>
+    <link rel="stylesheet" href="assets/css/packages.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Packaged Tours</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-section">
+            <h2>Find Your Perfect Travel Package</h2>
+            <p>Choose from a wide range of pre-designed travel packages!</p>
+        </div>
+    </section>
+
+    <section id="packages">
+        <h2>Our Popular Packages</h2>
+        <div class="package-container">
+            <div class="package">
+                <img src="beach.jpg" alt="Beach Package">
+                <h3>Beach Getaway</h3>
+                <p>5 days of sun and relaxation on the beach. All-inclusive package!</p>
+                <button class="book-btn" data-package="Beach Getaway">Book Now</button>
+            </div>
+
+            <div class="package">
+                <img src="adventure.jpg" alt="Adventure Package">
+                <h3>Adventure Tour</h3>
+                <p>For the thrill-seekers! Explore mountains and valleys.</p>
+                <button class="book-btn" data-package="Adventure Tour">Book Now</button>
+            </div>
+
+            <div class="package">
+                <img src="city.jpg" alt="City Exploration Package">
+                <h3>City Exploration</h3>
+                <p>Explore the top cities and cultural sites.</p>
+                <button class="book-btn" data-package="City Exploration">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Packaged Tours. All rights reserved.</p>
+    </footer>
+</body>
+</html>
