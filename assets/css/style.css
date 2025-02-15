@@ -481,8 +481,6 @@
   .tour-search {
     background: var(--bright-navy-blue);
     padding-block: var(--section-padding);
-    z-index: -2;
-    position: relative;
   }
   
   .tour-search-form .input-label {
@@ -514,6 +512,10 @@
     font-weight: var(--fw-600);
     margin-top: 35px;
   }
+  
+  
+  
+  
   
   
   
