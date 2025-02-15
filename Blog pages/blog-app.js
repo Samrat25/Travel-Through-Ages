@@ -27,3 +27,8 @@ hamburger.addEventListener("click", function () {
   mobileNav.classList.toggle("active");
   hamburger.classList.toggle("is-active");
 });
+// loader//
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loaderr");
+  loader.style.transform = "translateY(-100%)";
+});
