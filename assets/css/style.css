@@ -140,6 +140,9 @@
    * #REUSED STYLE
   \*-----------------------------------*/
   
+  .btn-primary{
+    border-radius: 50%;
+  }
   .container { padding-inline: 15px; }
   
   .btn {
