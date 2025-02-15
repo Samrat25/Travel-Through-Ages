@@ -13,20 +13,21 @@
 
     <div class="auth-container">
         <h1>Firebase Authentication</h1>
+        <form method="POST" >
 
         <!-- Sign-In Form -->
-        <div id="sign-in">
-            <input type="email" id="email" placeholder="Enter Email" />
-            <input type="password" id="password" placeholder="Enter Password" />
-            <button onclick="signIn()">Sign In</button>
+       <div id="sign-in">
+            <input type="email" id="email" placeholder="Enter Email" name="Email" />
+            <input type="password" id="password" placeholder="Enter Password" name="Password"/>
+            <button onclick="signIn()" name="SignIn">Sign In</button>
             <p>Don't have an account? <span onclick="toggleSignUp()">Sign up here</span></p>
         </div>
 
         <!-- Sign-Up Form -->
         <div id="sign-up" style="display: none;">
-            <input type="email" id="signUpEmail" placeholder="Enter Email" />
-            <input type="password" id="signUpPassword" placeholder="Enter Password" />
-            <button onclick="signUp()">Sign Up</button>
+            <input type="email" id="signUpEmail" placeholder="Enter Email" name="SignUpEmail" />
+            <input type="password" id="signUpPassword" placeholder="Enter Password" name="SignUpPassword" />
+            <button onclick="signUp()" name="SignUp">Sign Up</button>
             <p>Already have an account? <span onclick="toggleSignUp()">Sign in here</span></p>
         </div>
 
@@ -35,8 +36,21 @@
             <h2>Welcome, <span id="user-name"></span>!</h2>
             <button onclick="signOut()">Sign Out</button>
         </div>
+        </form>
     </div>
 
     <script src="assets/js/firebase.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyJ17Y_UmZbMuSafmzFQHkTDHNbLSSW3QUaH2LxO0zp0Nap8njKvL4K4uiF08MGi2Vnbg/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
