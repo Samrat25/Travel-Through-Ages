@@ -16,5 +16,26 @@ const app = initializeApp(firebaseConfig);
 const auth=getAuth(app);
 const user=auth.curreUser;
 function updateUserProfile(user){
-    
-}
+    const userName=userdisplayName;
+    const userEmail=user.email;
+    const userProfilePicture= user.photoURL;
+    console.log(userEmail)
+
+    document.getElementById("userName").textContent= "Dr. "+userName;
+    //document.getElementById("userEmail").textContent= userEmail;
+    document.getElementById("userProfilePicture").src= userProfilePicture;
+  }
+  
+  onAuthStateChanged(auth,(user) =>{
+    if(user)
+    {
+        updateUserProfile(user);
+        const uid=user.uid;
+        return uid;
+    }
+    else
+    {
+        alert("Create Account and Login");
+        window.location.href="../log.html";
+    }
+  });
