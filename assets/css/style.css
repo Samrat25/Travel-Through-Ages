@@ -251,8 +251,11 @@
   .logo{ 
     align-self: center;
     border-color: transparent;
+    
   }
-  
+  .logo img{
+    height: 110px;
+  }
   .header-btn-group {
     justify-self: flex-end;
     display: flex;
