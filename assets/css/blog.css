@@ -287,7 +287,7 @@ nav.active {
 
 .header {
   height: 100vh;
-  background: url("https://wallpapercave.com/wp/wp7769333.jpg");
+  background: url("https://as2.ftcdn.net/v2/jpg/09/59/26/49/1000_F_959264944_s8nW4Mv3wEHhFtqmPu016Hf2B22seUl3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -329,17 +329,17 @@ nav.active {
 }
 
 .header-content h1 {
-  color: #142361;
+  color: white;
   font-size: 2.5rem;
 }
 
 .textHighlight {
-  color: #e48111;
+  color: white;
 }
 
 .header-content p {
   width: 60%;
-  color: #3355a0;
+  color: black;
   margin: 0 auto;
 }
 
