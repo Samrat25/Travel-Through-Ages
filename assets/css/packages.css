@@ -444,3 +444,12 @@ footer {
     text-align: center;
     color: rgba(8, 26, 100, 0.479);
 }
+
+.questions{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(8, 26, 100, 0.479);
+}
+    
