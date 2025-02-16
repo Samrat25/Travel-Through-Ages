@@ -347,10 +347,13 @@ body {
     text-align: center;
     color: white;
     padding: 100px 0;
+    font-family: "Poppins","Sans-Serif";
 }
 
 .hero-section h2 {
     font-size: 48px;
+    font-family: "Poppins","Sans-Serif";
+
 }
 
 .package-container {
