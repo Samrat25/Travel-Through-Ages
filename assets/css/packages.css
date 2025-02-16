@@ -411,6 +411,8 @@ body {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
+    font-family: "poppins","san-serif";
+
 }
 
 .book-btn:hover {
@@ -423,12 +425,16 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+    font-family: "poppins","san-serif";
+
 }
 
 #contact form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "poppins","san-serif";
+
 }
 
 #contact input, #contact textarea {
@@ -438,6 +444,8 @@ footer {
     max-width: 500px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    font-family: "poppins","san-serif";
+
 }
 
 #contact button {
@@ -446,6 +454,8 @@ footer {
     color: white;
     border: none;
     border-radius: 5px;
+    font-family: "poppins","san-serif";
+
 }
 
 .contact_sec{
@@ -454,6 +464,8 @@ footer {
     align-items: center;
     text-align: center;
     color: rgba(8, 26, 100, 0.479);
+    font-family: "poppins","san-serif";
+
 }
 
 .questions{
