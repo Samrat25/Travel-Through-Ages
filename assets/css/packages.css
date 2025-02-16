@@ -341,6 +341,7 @@ body {
     text-align: center;
     font-size: larger;
     color: #0056b3;
+    font-family: "poppins","san-serif";
 
 }
 .hero-section {
@@ -371,6 +372,8 @@ body {
     width: 30%;
     padding: 20px;
     text-align: center;
+    font-family: "poppins","san-serif";
+
     
 }
 
@@ -388,11 +391,15 @@ body {
     font-size: 24px;
     color: #333;
     margin-top: 15px;
+    font-family: "poppins","san-serif";
+
 }
 
 .package p {
     color: #555;
     margin-top: 10px;
+    font-family: "poppins","san-serif";
+
 }
 
 .book-btn {
