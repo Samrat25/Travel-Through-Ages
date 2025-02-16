@@ -345,19 +345,19 @@ nav.active {
 }
 
 .scrollButton {
-  background: rgb(20, 36, 94);
+  background: rgb(233, 57, 230);
   background: linear-gradient(
     90deg,
-    rgba(20, 36, 94, 1) 0%,
-    rgba(5, 14, 47, 1) 50%,
-    rgba(24, 60, 125, 1) 50%,
-    rgba(9, 23, 50, 1) 100%
+    rgb(220, 117, 241) 0%,
+    rgb(248, 249, 251) 50%,
+    rgba(220, 117, 241) 50%,
+    rgb(255, 255, 255) 100%
   );
   transition: 0.5s ease-in-out;
   background-size: 200%;
   background-position: left;
   padding: 0.5rem 1rem;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1.5rem;
   border-radius: 10px;
   border: none;
@@ -399,9 +399,9 @@ nav.active {
   width: 70%;
   margin: 100px 100px;
   margin-bottom: 0px;
-  background-color: #f9fcff;
-  -webkit-box-shadow: 5px 5px 19px 1px rgba(20, 35, 97, 0.28);
-  box-shadow: 5px 5px 19px 1px rgba(20, 35, 97, 0.28);
+  background-color: #ffffff;
+  -webkit-box-shadow: 5px 5px 19px 1px rgb(220, 117, 241);
+  box-shadow: 5px 5px 19px 1px rgb(248, 249, 251);
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -449,13 +449,13 @@ nav.active {
 }
 
 .viewButton {
-  background: rgb(20, 36, 94);
+  background: rgb(233, 57, 230);
   background: linear-gradient(
     90deg,
-    rgba(20, 36, 94, 1) 0%,
-    rgba(5, 14, 47, 1) 50%,
-    rgba(24, 60, 125, 1) 50%,
-    rgba(9, 23, 50, 1) 100%
+    rgb(220, 117, 241) 0%,
+    rgb(248, 249, 251) 50%,
+    rgba(220, 117, 241) 50%,
+    rgb(255, 255, 255) 100%
   );
   transition: 0.5s ease-in-out;
   background-size: 200%;
@@ -470,7 +470,7 @@ nav.active {
 }
 
 .viewButton:hover {
-  color: #e0861e;
+  color: #000000;
   background-position: right;
 }
 
@@ -480,13 +480,13 @@ nav.active {
 
 .details h2 {
   font-size: 1.3rem;
-  color: #142361;
+  color: rgba(220, 117, 241);
 }
 
 .details p {
   font-size: 1rem;
   margin-top: 20px;
-  color: #4d608a;
+  color: rgb(19, 12, 20);
 }
 
 .custom-shape-divider-bottom-1631607238 {
@@ -507,11 +507,11 @@ nav.active {
 }
 
 .custom-shape-divider-bottom-1631607238 .shape-fill {
-  fill: #142361;
+  fill: rgba(220, 117, 241);
 }
 
 footer {
-  background: #142361;
+  background: rgba(220, 117, 241);
   color: white;
 }
 
@@ -545,7 +545,7 @@ footer {
 
 .footerPara,
 .contactPara {
-  color: #a4b9e7;
+  color: #000000;
 }
 
 .footerCopyright {

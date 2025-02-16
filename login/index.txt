@@ -1,9 +1,0 @@
-
-const firebaseConfig = {
-    apiKey: "AIzaSyBsqWZe8OJDRMxZI0UHwVgth3juKUbIKA0",
-    authDomain: "travel-website-ec14d.firebaseapp.com",
-    projectId: "travel-website-ec14d",
-    storageBucket: "travel-website-ec14d.firebasestorage.app",
-    messagingSenderId: "320965784440",
-    appId: "1:320965784440:web:c9ea5cda11a90a31bb0e8d"
-};
