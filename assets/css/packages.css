@@ -436,3 +436,11 @@ footer {
     border: none;
     border-radius: 5px;
 }
+
+.contact_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(8, 26, 100, 0.479);
+}
