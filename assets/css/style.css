@@ -468,6 +468,11 @@
     align-items: center;
     gap: 10px;
   }
+  /* Chat bot section */
+  .bot-img img {
+    width: 100vw;
+    height: 50vh;
+  }
   
   
   
