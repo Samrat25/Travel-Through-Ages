@@ -363,6 +363,109 @@
           <p><a href="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2025/02/16/05/20250216050029-2J2UBLUY.json">
           <img src="assets/images/Dont know where to travel  (2).png" alt=""></a></p>
         </div>
+         <!-- Our Services Section -->
+    <section class="services" id="services" style="border: 2px solid #FFFFFF;">
+      <h2>Our Services</h2>
+      <p>Travel smarter with our curated services designed to make your trips effortless and enjoyable.</p>
+
+      <div class="services-container">
+        <!-- Service Card: Interactive Travel Map -->
+        <div class="service-card">
+          <a href="travelmap.html">
+            <div class="icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+          </a>
+          <a href="travelmap.html">
+            <h3>Travel Map</h3>
+          </a>
+          <p>Explore popular destinations across India and the world. Click on markers to learn more about each
+            location.
+          </p>
+        </div>
+
+        <!-- Service Card: Hotel Finder -->
+        <div class="service-card">
+          <a href="hotel.html">
+            <div class="icon">
+              <i class="fas fa-hotel"></i>
+            </div>
+          </a>
+          <a href="hotel.html">
+            <h3>Hotel Finder</h3>
+          </a>
+          <p>Find the best hotels at affordable rates, handpicked to suit your budget and preferences.</p>
+        </div>
+
+        <!-- Service Card: Flight Booking -->
+        <div class="service-card">
+          <a href="fly.html">
+            <div class="icon">
+              <i class="fas fa-plane"></i>
+            </div>
+          </a>
+          <a href="fly.html">
+            <h3>Flight Booking</h3>
+          </a>
+          <p>Book flights at the best prices, with options tailored to your travel needs.</p>
+        </div>
+
+        <!-- Service Card: Travel Blog -->
+        <div class="service-card">
+          <a href="blog.html">
+            <div class="icon">
+              <i class="fas fa-pen"></i>
+            </div>
+          </a>
+          <a href="blog.html">
+            <h3>Travel Blog</h3>
+          </a>
+          <p>Read tips, guides, and personal stories from seasoned travelers.</p>
+        </div>
+
+        <!-- Local Guide Connection -->
+        <div class="service-card">
+          <a href="guide.html">
+            <div class="icon">
+              <i class="fa-solid fa-person"></i>
+            </div>
+          </a>
+          <a href="guide.html">
+            <h3>Local Guide Connection</h3>
+          </a>
+          <p>Partner with local guides and tour providers, allowing to book personalized tours or experiences led by
+            locals for an authentic travel experience.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const itineraries = document.querySelectorAll(".itinerary");
+        const serviceCards = document.querySelectorAll(".service-card");
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("inview");
+            } else {
+              entry.target.classList.remove("inview"); // Remove class when out of view
+            }
+          });
+        }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+
+        // Observe both itineraries and service cards
+        itineraries.forEach(itinerary => {
+          observer.observe(itinerary);
+        });
+
+        serviceCards.forEach(card => {
+          observer.observe(card);
+        });
+      });
+
+    </script>
       <!-- 
         - #PACKAGE
       -->

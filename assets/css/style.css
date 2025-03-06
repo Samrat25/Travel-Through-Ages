@@ -1525,3 +1525,108 @@
       font-size: 15px;
     }
   }
+/* voyager */
+
+.services {
+  padding: 4rem 2rem;
+  text-align: center;
+  /* background-color: #fff; */
+  background: linear-gradient(135deg, #9aecff 0%, #3b302d 100%);/* Light background for eye comfort */
+
+}
+
+.services h2 {
+  font-size: 3.8rem;
+  margin-bottom: 1rem;
+  color: #00467f;
+}
+
+.services p {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: #666;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  background-color: #00467f;
+  color: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  transition: background-color 0.3s ease;
+}
+
+.icon i {
+  font-size: 2rem;
+}
+
+.service-card:hover .icon {
+  background-color: #ffdd57;
+  color: #00467f;
+}
+
+.service-card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  color: #00467f;
+}
+
+.service-card p {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Dark mode for Service */
+.dark-mode #services {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light grey text */
+  }
+
+  .dark-mode #services h1 {
+    color: #ffa500; /* Orange color for the main heading in dark mode */
+  }
+
+  .dark-mode #services h2 {
+    color: #ffa500; /* Bright yellow subheading in dark mode */
+  }
+
+  .dark-mode #services p {
+    color: #e0e0e0; /* darker grey for paragraph text in dark mode */
+  }
+
+  .dark-mode #services p strong {
+    color: #ffa500; /* Yellow highlight for important text in dark mode */
+  }
+
+  .dark-mode .service-card{
+    background-color: #1e1e1e; /* Darker background for service cards */
+    color: #e0e0e000; /* Light grey text color */
+  }
